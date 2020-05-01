@@ -10,7 +10,7 @@ Advanced Guide
 Road map
 ********
 
-There are many tools, packages and scripts, that can be used to manage Braiins OS+. For better navigation, use the following tree:
+There are many tools, packages, and scripts that can be used to manage Braiins OS+. For better navigation, use the following tree:
 
  * Install Braiins OS+
  
@@ -56,7 +56,7 @@ There are many tools, packages and scripts, that can be used to manage Braiins O
 BOS+ Toolbox
 ***************
 
-BOS+ Toolbox is a new tool, that allow the user to easily install, uninstall, update, detect and configure Braiins OS+. It also allows to do it in batch mode, which makes the management of a larger number of devices more easy. This is the recommended way to manage your machines.
+BOS+ Toolbox is a new tool that enables users to easily install, uninstall, update, detect, and configure Braiins OS+. It also enables batch mode, which makes it easier to manage a large number of devices at once. This is the recommended way to manage your machines.
 
 =====
 Usage
@@ -86,10 +86,10 @@ Features, PROs and CONs of this method:
 
 .. _bosbox_install:
 =========================================
-Install Braiins OS+ using Braiins OS+ Box
+Install Braiins OS+ using BOS+ Toolbox
 =========================================
 
-  * Download the **Braiins OS+ Box** from our `website <https://braiins-os.com/>`_.
+  * Download the **BOS+ Toolbox** from our `website <https://braiins-os.com/>`_.
   * Create a new text file, change the ".txt" ending to ".csv" and insert the IP addresses on which you want execute the commands. Put that file in the directory where the BOS+ Toolbox is located.
   * Once you have downloaded BOS+ Toolbox, open your command-line interpreter (e.g. CMD for Windows, Terminal for Ubuntu, etc.) and use the following commands:
 
@@ -132,14 +132,14 @@ Arguments                             Description
 
   ./bos-toolbox.exe install --batch listOfMiners.csv --psu-power-limit 1200 --install-password admin
 
-This command will install Braiins OS+ on the miners, that are specified in the *listOfMiners.csv* file and set the power limit to 1200 on all of them. The command will also automatically insert the SSH password *admin*, when the miner asks for it.
+This command will install Braiins OS+ on the miners that are specified in the *listOfMiners.csv* file and set the power limit to 1200 on all of them. The command will also automatically insert the SSH password *admin*, when the miner asks for it.
 
 .. _bosbox_update:
 ===========================================
-Update Braiins OS+ using Braiins OS+ Box
+Update Braiins OS+ using BOS+ Toolbox
 ===========================================
 
-  * Download the **Braiins OS+ Box** from our `website <https://braiins-os.com/>`_.
+  * Download the **BOS+ Toolbox** from our `website <https://braiins-os.com/>`_.
   * Create a new text file, change the ".txt" ending to ".csv" and insert the IP addresses on which you want execute the commands. Put that file in the directory where the BOS+ Toolbox is located.
   * Once you have downloaded BOS+ Toolbox, open your command-line interpreter (e.g. CMD for Windows, Terminal for Ubuntu, etc.) and use the following commands:
 
@@ -177,10 +177,10 @@ This command will look for an update for the miners, that are specified in the *
 
 .. _bosbox_uninstall:
 ===========================================
-Uninstall Braiins OS+ using Braiins OS+ Box
+Uninstall Braiins OS+ using BOS+ Toolbox
 ===========================================
 
-  * Download the **Braiins OS+ Box** from our `website <https://braiins-os.com/>`_.
+  * Download the **BOS+ Toolbox** from our `website <https://braiins-os.com/>`_.
   * Create a new text file, change the ".txt" ending to ".csv" and insert the IP addresses on which you want execute the commands. Put that file in the directory where the BOS+ Toolbox is located.
   * Once you have downloaded BOS+ Toolbox, open your command-line interpreter (e.g. CMD for Windows, Terminal for Ubuntu, etc.) and use the following commands:
 
@@ -210,14 +210,14 @@ Arguments                             Description
 
   ./bos-toolbox.exe uninstall --batch listOfMiners.csv
 
-This command will uninstall Braiins OS+ from the miners, that are specified in the *listOfMiners.csv* file and install a default stock firmware (Antminer-S9-all-201812051512-autofreq-user-Update2UBI-NF.tar.gz).
+This command will uninstall Braiins OS+ from the miners that are specified in the *listOfMiners.csv* file and install a default stock firmware (Antminer-S9-all-201812051512-autofreq-user-Update2UBI-NF.tar.gz).
 
 .. _bosbox_configure:
 ===========================================
-Configure Braiins OS+ using Braiins OS+ Box
+Configure Braiins OS+ using BOS+ Toolbox
 ===========================================
 
-  * Download the **Braiins OS+ Box** from our `website <https://braiins-os.com/>`_.
+  * Download the **BOS+ Toolbox** from our `website <https://braiins-os.com/>`_.
   * Create a new text file, change the ".txt" ending to ".csv" and insert the IP addresses on which you want execute the commands. Put that file in the directory where the BOS+ Toolbox is located.
   * Once you have downloaded BOS+ Toolbox, open your command-line interpreter (e.g. CMD for Windows, Terminal for Ubuntu, etc.) and use the following commands:
 
@@ -266,14 +266,14 @@ save_apply                            save and apply the settings from the CSV f
   
   ./bos-toolbox.exe multiconfiger --user root save_apply listOfMiners.csv
 
-The first command will load the configuration of the miners, that are specified in the *listOfMiners.csv* (using the login username *root*) and save it to the CSV file. You can now open the file and edit what you need. After the file was edited, the second command will copy the settings back to the miners and apply them.
+The first command will load the configuration of the miners that are specified in the *listOfMiners.csv* (using the login username *root*) and save it to the CSV file. You can now open the file and edit what you need. After the file has been edited, the second command will copy the settings back to the miners and apply them.
 
 .. _bosbox_scan:
 =========================================================
-Scan the network to identify miners using Braiins OS+ Box
+Scan the network to identify miners using BOS+ Toolbox
 =========================================================
 
-  * Download the **Braiins OS+ Box** from our `website <https://braiins-os.com/>`_.
+  * Download the **BOS+ Toolbox** from our `website <https://braiins-os.com/>`_.
   * Once you have downloaded BOS+ Toolbox, open your command-line interpreter (e.g. CMD for Windows, Terminal for Ubuntu, etc.) and use the following commands:
 
 ::
@@ -308,21 +308,21 @@ listen                                listen for incoming broadcast from devices
 
   ./bos-toolbox.exe discover scan 10.10.10.0/24
 
-This command will scan the network, in the range 10.10.10.0 - 10.10.10.255 and list the found miners, with their IP addresses.
+This command will scan the network in the range 10.10.10.0 - 10.10.10.255 and list the found miners, with their IP addresses.
 
 .. _web_package:
 ***********
 Web Package
 ***********
 
-The Web package can be used to switch from stock firmware, which was released before 2019. It should also work on other stock-based firmwares. This package cannot be used on stock firmware, released in 2019 and later, because of the signature verification, that was implemented. The signature verification prevents the usage of other than original stock firmwares.
+The Web package can be used to switch from stock firmware that was released before 2019. It should also work on other stock-based firmwares. This package cannot be used on stock firmware that was released in 2019 and later because the signature verification that was implemented prevents the usage of 3rd party firmwares.
 
 =====
 Usage
 =====
 
   * Download the **Web Package** from our `website <https://braiins-os.com/>`_.
-  * Follow the sections bellow
+  * Follow the sections below
 
 =======================================
 Features, PROs and CONs of this method:
@@ -330,8 +330,8 @@ Features, PROs and CONs of this method:
 
   + replaces stock firmware with Braiins OS+ without additional tools
   + migrates the network configuration
-  + migrates pool URLs, users and passwords
-  + turns on autotuning on default power limit (1420W)
+  + migrates pool URLs, users, and passwords
+  + turns on autotuning with default power limit (1420W)
   
   - cannot be used on stock firmware released in 2019 and later
   - cannot configure the installation (e.g. it will always migrate the network settings)
@@ -343,7 +343,7 @@ Install Braiins OS+ using Web package
 =====================================
 
   * Download the **Web Package** from our `website <https://braiins-os.com/>`_.
-  * Log-in on your miner and go to the section *System -> Upgrade*.
+  * Login on your miner and go to the section *System -> Upgrade* in the web interface.
   * Upload the downloaded package and flash the image.
 
 .. _sd:
@@ -351,7 +351,7 @@ Install Braiins OS+ using Web package
 SD card image
 *************
 
-If you are running stock firmware, which was released in 2019 and later, the only way to install Braiins OS+ is to insert an SD card with Braiins OS+ flashed on it. In 2019, the SSH connection was locked and the signature verification in the web interface prevents the usage of other than stock firmware usage.
+If you are running stock firmware that was released in 2019 and later, the only way to install Braiins OS+ is to insert an SD card with Braiins OS+ flashed on it. In 2019, the SSH connection was locked and the signature verification in the web interface prevents the usage of 3rd party firmwares.
 
 =====
 Usage
@@ -365,10 +365,10 @@ Features, PROs and CONs of this method:
 =======================================
 
   + replaces SSH locked stock firmware with Braiins OS+
-  + uses the network configuration stored on the NAND (this can be turned off, see the section *Network settings* bellow)
+  + uses the network configuration stored on the NAND (this can be turned off, see the section *Network settings* below)
   + turns on autotuning on default power limit (1420W)
   
-  - does not migrate pool URLs, users and passwords
+  - does not migrate pool URLs, users, and passwords
   - no batch-mode
 
 .. _sd_install:
@@ -399,7 +399,7 @@ Install Braiins OS+ using SD card
 Network settings
 ================
  
- By default, network configuration stored on the NAND is used, while running Braiins OS+ from an SD card. This feature can be turned off, by following the steps bellow:
+By default, the network configuration stored on the NAND is used while running Braiins OS+ from an SD card. This feature can be turned off by following the steps bellow:
 
   * Mount the first FAT partition of the SD card
   * Open the file uEnv.txt and insert the following string (make sure there is only one string per line)
@@ -408,7 +408,7 @@ Network settings
 
     cfg_override=no
 
-Disabling usage of old network settings is beneficial for the users, that have problems with the miner not being visible in the network (e.g. static IP address used on NAND is out of range of the network). By doing so, DHCP is used.
+Disabling usage of old network settings is beneficial for users that have problems with the miner not being visible in the network (e.g. static IP address used on NAND is out of range of the network). By doing so, DHCP is used.
 
 .. _sd_nand_install:
 ============
@@ -424,7 +424,7 @@ The SD card can be used to replace the firmware running on NAND with Braiins OS+
 Braiins OS+ factory reset using SD card
 =======================================
 
-You can do a factory reset, by following the steps bellow:
+You can do a factory reset by following the steps bellow:
 
   * Mount the first FAT partition of the SD card
   * Open the file uEnv.txt and insert the following string (make sure there is only one string per line)
@@ -438,7 +438,7 @@ You can do a factory reset, by following the steps bellow:
 Remote (SSH) install package
 ****************************
 
-With the *Remote (SSH) install package* you can install or uninstall Braiins OS+. This method is not recommended, as it requires a Python setup. Use the BOS+ Toolbox instead.
+With the *Remote (SSH) install package* you can install or uninstall Braiins OS+. This method is not recommended, as it requires a Python setup. The BOS+ Toolbox is more user-friendly.
 
 =====
 Usage
@@ -456,11 +456,11 @@ Features, PROs and CONs of this method:
   + migrates the whole configuration by default (can be adjusted) when installing Braiins OS+
   + migrates the network configuration by default (can be adjusted) when uninstalling Braiins OS+
   + parameters are available to customize the process
-  + turns on autotuning on default power limit (1420W) when installing Braiins OS+
+  + turns on autotuning with default power limit (1420W) when installing Braiins OS+
   
   - no batch-mode (unless you create your own scripts)
   - requires a long setup
-  - does not work on miner with locked SSH
+  - does not work on miners with locked SSH
 
 .. _ssh_package_environment:
 =========================
@@ -474,7 +474,7 @@ First, you need to prepare the Python environment. This consists of the followin
 
 *(Note that the commands are compatible with Ubuntu and Ubuntu for Windows 10. If you are using a different distribution of Linux or a different OS, please check the corresponding documentation and edit the commands as necessary.)*
 
-TODO update links, paths 
+(TODO: update links, paths) 
 ::
 
   #Update the repositories and install dependencies
@@ -499,7 +499,7 @@ Install Braiins OS+ using SSH package
 
 Installation of Braiins OS+ using the so-called *SSH Method* consists of the following steps:
 
-* *(Custom Firmware)* Flash stock firmware. This step can be skipped if the device is running on stock firmware or on a previous versions of Braiins OS. *(Note: It is possible, that Braiins OS+ can be installed directly over a custom firmware, but as they differ from the stock version, it might be necessary to flash stock firmware first.)*
+* *(Custom Firmware)* Flash stock firmware. This step can be skipped if the device is running on stock firmware or on a previous versions of Braiins OS. *(Note: It is possible that Braiins OS+ can be installed directly over a custom firmware, but as they differ from the stock version, it might be necessary to flash stock firmware first.)*
 * *(Only Windows)* Install *Ubuntu for Windows 10* available from the Microsoft Store `here. <https://www.microsoft.com/en-us/store/p/ubuntu/9nblggh4msv6>`_
 * Prepare the Python environment, which is described in the section :ref:`ssh_package_environment`.
 * Run the following commands in your command line terminal (replace the placeholder ``IP_ADDRESS`` accordingly) :
@@ -508,7 +508,7 @@ Installation of Braiins OS+ using the so-called *SSH Method* consists of the fol
 
 ::
 
-    #Change the directory to the unpacked firmware folder (if not already in the firmware folder)
+  #Change the directory to the unpacked firmware folder (if not already in the firmware folder)
   cd ./braiins-os_am1-s9_ssh_2019-02-21-0-572dd48c_2020-03-29-1-6b4a0f46
   
   #Activate the virtual environment (if it is not already activated)
@@ -555,14 +555,14 @@ If you created a backup of the original firmware during the installation of Brai
   cd ~/braiins-os_am1-s9_ssh_2019-02-21-0-572dd48c_2020-03-29-1-6b4a0f46 && source .env/bin/activate
   python3 restore2factory.py backup/BACKUP_ID_DATE/ IP_ADDRESS
 
-**Note: This method is not recommended as the backup creation is very finicky. The backup can be corrupted and there is no way to check it. Use at your own risk and make sure, you can access the miner and insert an SD card to it in case the restoration does not finish successfully!**
+**Note: This method is not recommended as the backup creation is very finicky. The backup can be corrupted and there is no way to check it. Use at your own risk and make sure you can access the miner and insert an SD card to it in case the restoration does not finish successfully!**
 
 .. _opkg:
 ****
 OPKG
 ****
 
-OPKG commands can be used after connecting to the miner via SSH. There are many OPKG commands, but regarding Braiins OS+, you need to use only the following:
+OPKG commands can be used after connecting to the miner via SSH. There are many OPKG commands, but the only ones that are relevant with Braiins OS+ are the following:
 
   * *opkg update* - updates the package lists. It's recommended to use this command before other OPKG commands.
   * *opkg install PACKAGE_NAME* install the defined package. It's recommended to use *opkg update* to update the package lists before installing packages.
@@ -596,7 +596,7 @@ Features, PROs and CONs of this method:
 Update Braiins OS+ using OPKG
 =============================
 
-With OPKG you can easily update your current installation of Braiins OS+, by connecting to the miner via SSH and using the following commands:
+With OPKG, you can easily update your current installation of Braiins OS+ by connecting to the miner via SSH and using the following commands:
 
 ::
 
@@ -613,7 +613,7 @@ This will migrate the configuration and continue to mine without a need to confi
 Switch to Braiins OS+ from other versions using OPKG
 ====================================================
 
-With OPKG you can easily switch to Braiins OS+, by connecting to the miner via SSH and using the following commands:
+With OPKG, you can easily switch to Braiins OS+ by connecting to the miner via SSH and using the following commands:
 
 ::
 
@@ -630,7 +630,7 @@ This will migrate the configuration and continue to mine without a need to confi
 Braiins OS+ factory reset using OPKG
 ====================================
 
-With OPKG you can easily revert to the initial version of Braiins OS (the version, which was installed for the first time on that device), by connecting to the miner via SSH and using the following commands:
+With OPKG, you can easily revert to the initial version of Braiins OS (i.e. the version first installed on the device) by connecting to the miner via SSH and using the following commands:
 
 ::
 
@@ -647,7 +647,7 @@ This will reset the configuration to the state after the first Braiins OS instal
 Sysupgrade package
 ******************
 
-Sysupgrade is used to upgrade the system running on the device. With this method, you can install various versions of Braiins OS or create a backup of the system. Installation of a firmware using *Braiins OS web interface* or using *opkg install firmware* uses this method. It's recommended to use the *Braiins OS web interface* or *opkg install firmware* instead of this method.
+Sysupgrade is used to upgrade the system running on the device. With this method, you can install various versions of Braiins OS or create a backup of the system. It's recommended to use the *Braiins OS web interface* or *opkg install firmware* instead of this method, as they are more user-friendly.
 
 =====
 Usage
@@ -659,13 +659,13 @@ In order to use sysupgrade, you need to connect to the miner via SSH. The syntax
 
   sysupgrade [parameters] <image file or URL>
 
-The most important parameters are **--help** (to display the help) and **-F** to force the installation. It's not recommended to use this method (besides the way, it is described bellow), unless you really know, what you are doing.
+The most important parameters are **--help** (to display the help) and **-F** to force the installation. It's not recommended to use this method (besides the way that it is described below) unless you really know what you are doing.
 
 =======================================
 Features, PROs and CONs of this method:
 =======================================
 
-  + installs various version of Braiins OS, while connected to the miner
+  + installs various version of Braiins OS while connected to the miner
   + migrates the configuration
   + parameters are available to customize the process
   
@@ -679,7 +679,7 @@ Switch to Braiins OS (without autotuning) from other versions using Sysupgrade
 
 In order to upgrade from older version of Braiins OS or downgrade from Braiins OS+, use the following command (replace the placeholder ``IP_ADDRESS`` accordingly):
 
-TODO update link
+(TODO: update link)
 ::
 
   ssh root@IP_ADDRESS 'wget -O /tmp/firmware.tar https://feeds.braiins-os.org/am1-s9/firmware_2020-03-29-0-6ec1a631_arm_cortex-a9_neon.tar && sysupgrade /tmp/firmware.tar'
@@ -697,7 +697,7 @@ Switch to Braiins OS+ from other versions using Sysupgrade
 
 In order to upgrade from older version of Braiins OS, use the following command (replace the placeholder ``IP_ADDRESS`` accordingly):
 
-TODO update link
+(TODO: update link)
 ::
 
   ssh root@IP_ADDRESS 'wget -O /tmp/firmware.tar https://feeds.braiins-os.org/am1-s9/firmware_2020-03-29-0-6ec1a631_arm_cortex-a9_neon.tar && sysupgrade /tmp/firmware.tar'
@@ -715,7 +715,7 @@ Note: It's recommended to use the *BOS+ Toolbox*, *Braiins OS web interface* or 
 Bos2Bos script
 **************
 
-**Bos2Bos script is not recommended to use, unless you experience problems with the installation using the other methods.** This method works, only if Braiins OS is already running on the device.
+**It's not recommend to use the Bos2Bos script unless you experience problems with the installation using the other methods.** This method only works if Braiins OS is already running on the device.
 
 =======================================
 Features, PROs and CONs of this method:
@@ -743,7 +743,7 @@ Usage of the Bos2Bos script requires the following setup:
   #Update the repositories and install dependencies
   sudo apt update && sudo apt install python3 python3-virtualenv virtualenv
   
-  # clone repository
+  #clone repository
   git clone https://github.com/braiins/braiins-os.git
   
   #change the directory
