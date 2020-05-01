@@ -19,17 +19,17 @@ Running stock firmware released before 2019
 You can easily install Braiins OS+ via the web interface upgrade process. In order to do so, follow the steps bellow:
 
   * Download the **Web Package** from our `website <https://braiins-os.com/>`_.
-  * Login on your miner and go to the section *System -> Upgrade*.
+  * Login on your miner and go to the section *System -> Upgrade* in the web interface.
   * Upload the downloaded package and flash the image.
 
 Braiins OS+ will be installed on the miner. The network configuration (e.g. Static IP address) and the pool and user settings will be automatically migrated to Braiins OS+ and autotuning will be turned on.
 
 **Multiple-device installation**
 
-Installation of Braiins OS+ can easily be done using the Braiins OS+ Box (TODO:edit name). In order to do so, follow the steps bellow:
+Installation of Braiins OS+ can easily be done using the BOS+ Toolbox. In order to do so, follow the steps bellow:
 
-  * Download Braiins OS+ Box (TODO:edit name) from our `website <https://braiins-os.com/>`_. and open it.
-  * In the Braiins OS+ Box (TODO:edit name), type the following command (replace the IP_ADDRESS placeholder accordingly) (TODO: specify how to list multiple IP addresses)
+  * Download the BOS+ Toolbox from our `website <https://braiins-os.com/>`_. and open it.
+  * In the BOS+ Toolbox, type the following command (replace the IP_ADDRESS placeholder accordingly) (TODO: specify how to list multiple IP addresses)
 
   ::
 
@@ -43,7 +43,7 @@ For more information about this process, and for more options visit the section 
 Running stock firmware released in 2019 or later
 ==================================================
 
-If you are running stock firmware that was released in 2019 and later, the only way to install Braiins OS+ is to insert an SD card with Braiins OS+ flashed on it. In 2019, the SSH connection was locked and the signature verification in the web interface prevents the usage of 3rd party firmwares.
+If you are running stock firmware that was released in 2019 and later, the only way to install Braiins OS+ is to insert an SD card with Braiins OS+ flashed on it. In 2019 and later stock firmwares, the SSH connection is locked and the signature verification in the web interface prevents the usage of 3rd party firmwares.
 
 In order to install Braiins OS+ via the SD card method, follow the steps bellow:
  * Download the SD card image from our `website <https://braiins-os.com/>`_.
@@ -83,14 +83,14 @@ case the button is missing, try to refresh the page. To trigger the
 upgrade process, type ``firmware`` into the *Download and install
 package* field and press *OK*.
 
-For more information about this process, and for more options visit the section TODO LINK AND NAME OF web package SECTION.
+For more information about this process, and for more options visit the section (TODO: LINK AND NAME OF web package SECTION).
 
 **Multiple-device update**
 
-Updating Braiins OS+ on multiple devices at once can easily be done using the Braiins OS+ Box (TODO:edit name). In order to do so, follow the steps bellow:
+Updating Braiins OS+ on multiple devices at once can easily be done using the BOS+ Toolbox. In order to do so, follow the steps bellow:
 
-  * Download Braiins OS+ Box (TODO:edit name) from our `website <https://braiins-os.com/>`_. and open it.
-  * In the Braiins OS+ Box (TODO:edit name), type the following command (replace the IP_ADDRESS placeholder accordingly) (TODO how to specify multiple IPs)
+  * Download BOS+ Toolbox from our `website <https://braiins-os.com/>`_. and open it.
+  * In the BOS+ Toolbox, type the following command (replace the IP_ADDRESS placeholder accordingly) (TODO: how to specify multiple IPs)
 
   ::
 
@@ -98,21 +98,21 @@ Updating Braiins OS+ on multiple devices at once can easily be done using the Br
 
 This will check for a new version and update Braiins OS+ if possible. 
 
-For more information about this process, and for more options visit the section TODO LINK AND NAME OF opkg SECTION.   
+For more information about this process, and for more options visit the section (TODO: LINK AND NAME OF opkg SECTION).   
 
 *********************
 Uninstall Braiins OS+
 *********************
 
-Uninstallation of Braiins OS+ can easily be done using the Braiins OS+ Box (TODO:edit name). In order to do so, follow the steps bellow:
+Uninstallation of Braiins OS+ can easily be done using the BOS+ Toolbox. In order to do so, follow the steps bellow:
 
-  * Download Braiins OS+ Box (TODO:edit name) from our `website <https://braiins-os.com/>`_. and open it.
-  * In the Braiins OS+ Box (TODO:edit name), type the following command (replace the IP_ADDRESS placeholder accordingly)
+  * Download BOS+ Toolbox from our `website <https://braiins-os.com/>`_. and open it.
+  * In the BOS+ Toolbox, type the following command (replace the IP_ADDRESS placeholder accordingly)
 
   ::
 
     uninstall IP_ADDRESS
 
-This will revert back to stock firmware. It will automatically install an older version, where the SSH was not locked, so you can access your miner remotely.
+This will revert back to stock firmware. It will automatically install an older version with unlocked SSH so you can access your miner remotely.
 
-For more information about this process, and for more options visit the section TODO LINK AND NAME OF restore2factory SECTION.
+For more information about this process and for more options, visit the section (TODO: LINK AND NAME OF restore2factory SECTION).
